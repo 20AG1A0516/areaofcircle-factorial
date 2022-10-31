@@ -1,0 +1,26 @@
+// area of circle
+#include<stdio.h>
+float area(int radius);
+int main(){
+    int radius;
+    printf("Enter the radius of circle:");
+    scanf("%d",&radius);
+    printf("The area of the circle is:%.2f\n",area(radius));
+}
+float area(int radius){
+    float pie=3.14;
+    float areaofcircle=radius*radius*pie;
+    return areaofcircle;
+}
+// factorial of a number
+#include<stdio.h>
+int main(){
+    int i,factorial=1,n;
+    printf("Enter the n:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        factorial=factorial*i;
+    }
+    printf("Factorial of %d is: %d",n,factorial);    
+}
+
